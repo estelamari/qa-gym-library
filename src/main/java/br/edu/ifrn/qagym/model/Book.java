@@ -43,8 +43,10 @@ public class Book {
     }
 
     public boolean isClassic() {
+
         int currentYear = LocalDate.now().getYear();
-        return (currentYear - this.publicationYear) >= 50;    
+        return (currentYear - this.publicationYear) >= 50;
+
     }
 
     @Override
